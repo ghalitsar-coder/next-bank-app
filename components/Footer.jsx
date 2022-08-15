@@ -61,7 +61,15 @@ const Footer = () => {
       </div>
       <div className="border-t-[.1px] border-t-slate-700 my-5 flex justify-between pt-3">
         <p className="font-poppins text-sm text-slate-200 font-light ">
-          Copyright &copy; 2022 Ghalitsar ft.Hoobank All Right Reserved{" "}
+          Copyright &copy; 2022{" "}
+          <span
+            className="font-semibold cursor-pointer"
+            onClick={() => window.open("https://ghalitsardev.netlify.app")}
+          >
+            {" "}
+            Ghalitsar{" "}
+          </span>{" "}
+          ft.Hoobank All Right Reserved{" "}
         </p>
         <div className="flex gap-x-5 items-center">
           {socialMedia.map((item, idx) => (
